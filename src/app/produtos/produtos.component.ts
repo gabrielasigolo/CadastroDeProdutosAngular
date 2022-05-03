@@ -24,9 +24,9 @@ export class ProdutosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectedHero?: Produto;
+  selectedProduct?: Produto;
   onSelect(produto: Produto): void {
-  this.selectedHero = produto;
+  this.selectedProduct = produto;
 }
 
 }

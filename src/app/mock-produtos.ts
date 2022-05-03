@@ -1,7 +1,7 @@
 import { Produto } from "./produto";
 
 export const PRODUTOS: Produto[] = [
-  { id: 1, name: 'Caixa de bombom Nestlé', preco: 25, qtdEstoque: 100, categoria: 'Alimentação'},
+  { id: 1, name: 'Barra Nestlé', preco: 25, qtdEstoque: 100, categoria: 'Alimentação'},
   { id: 2, name: 'Sorvete Kibon', preco: 12, qtdEstoque: 28, categoria: 'Alimentação'},
   { id: 3, name: 'Notebook Acer', preco: 3000, qtdEstoque: 40, categoria: 'Eletrônicos' },
   { id: 4, name: 'Gilette', preco: 5, qtdEstoque: 102, categoria: 'Beleza' },

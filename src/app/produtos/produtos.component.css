@@ -4,7 +4,36 @@
     align-items: center;
 }
 
+.productDetails{
+    background-color: #E8F9FD;
+}
+
 .produtos{ 
     list-style-type: none;
     margin-right: 152px;
+}
+
+.produtos li{
+    margin: 10px;
+    border: none;
+    background-color: #4B7BE5;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.badge{
+    background-color: #E8F9FD;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.details input{
+    border: none;
+    background-color: #E8F9FD;
+    border-radius: 2px;
+    padding: 4px;
 }

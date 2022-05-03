@@ -1,16 +1,22 @@
 
 <div class="container">
-    <h3>Detalhes de {{produto.name | uppercase}}</h3>
-    <div><span>id: </span>{{produto.id}}</div>
-    <div>
-      <label for="name">Nome do produto: </label>
-      <input id="name" [(ngModel)]="produto.name" placeholder="Nome">
-    </div>
-    
+      <div *ngIf="selectedProduct">
+        <h2>Detalhes do produto: {{selectedProduct.name | uppercase}}</h2>
+        <div>id: {{selectedProduct.id}}</div>
+        <div class="details">
+          <label for="product-name">Nome: </label>
+          <input id="product-name" [(ngModel)]="selectedProduct.name" placeholder="Nome"><br>
+          <label for="product-preco">Preço: </label>
+          <input id="product-preco" [(ngModel)]="selectedProduct.preco" placeholder="Preço"><br>
+          <label for="product-qtdEstoque">Qtd. no Estoque: </label>
+          <input id="product-qtdEstoque" [(ngModel)]="selectedProduct.qtdEstoque" placeholder="Quantidade no estoque"><br>
+          <label for="product-categoria">Categoria: </label>
+          <input id="product-categoria" [(ngModel)]="selectedProduct.categoria" placeholder="Categoria"><br>
+        </div>
+      </div>  
     <h2>Produtos</h2>
     <ul class="produtos">
-      <li *ngFor="let produto of produtos">
-        <button type="button" (click)="onSelect(produto)"></button>
+      <li *ngFor="let produto of produtos" (click)="onSelect(produto)">
         <span class="badge">{{produto.id}}</span> {{produto.name}}
       </li>
     </ul>
