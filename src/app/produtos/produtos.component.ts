@@ -11,29 +11,12 @@ export class ProdutosComponent implements OnInit {
 
   produtos = PRODUTOS;
 
-  produto1: Produto = {
+  produto: Produto = {
     id: 1,
-    name: 'Caixa de bombom Nestlé'
-  }
-
-  produto2: Produto = {
-    id: 2,
-    name: 'Sorvete Kibon'
-  }
-
-  produto3: Produto = {
-    id: 3,
-    name: 'Chocolate Nestlé'
-  }
-
-  produto4: Produto = {
-    id: 4,
-    name: 'Gilette'
-  }
-
-  produto5: Produto = {
-    id: 5,
-    name: 'Pizza Sadia'
+    name: 'Caixa de bombom Nestlé',
+    preco: 25,
+    qtdEstoque: 100,
+    categoria: 'Alimentação'
   }
 
   constructor() { }
